@@ -96,7 +96,6 @@ const Virtuoso: FC<IVirtuosoProps> = ({
     <div ref={connect} style={style} className={cn(className, classNames)}>
       <Virt
         totalCount={count}
-        fixedItemHeight={200}
         increaseViewportBy={200}
         ref={virtuoso}
         itemContent={(index) => {
