@@ -1,6 +1,6 @@
 # Overview
 
-Iterate on data for smarter designs by using the custom component **"Virtualizer"**. This component enables iteration over a Qodly Source to display dynamic Stylebox components with various heights depending on the content of each virtualizer's item.
+Iterate on data for smarter designs by using the custom component **"Virtuoso"**. This component enables iteration over a Qodly Source to display dynamic Stylebox components with various heights depending on the content of each virtualizer's item.
 
 ## Virtualizer
 
@@ -10,9 +10,9 @@ Iterate on data for smarter designs by using the custom component **"Virtualizer
 
 ## Properties
 
-| Name                  | Attribute | Type     | Default  | Description                                                                                                        |
-| --------------------- | --------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------ |
-| enable Accordion Mode | `enable`  | checkbox | Vertical | Type of direction to show the items of the component. There are three possible values: Horizontal, Vertical & Grid |
+| Name                  | Attribute       | Type     | Default | Description                                                                                                          |
+| --------------------- | --------------- | -------- | ------- | -------------------------------------------------------------------------------------------------------------------- |
+| enable Accordion Mode | `accordionMode` | checkbox | false   | Enables or disables the accordion behavior for the component. When enabled, only one item can be expanded at a time. |
 
 ## Data Access
 
@@ -30,5 +30,13 @@ To eliminate the default purple background of the element that is selected, you 
 ```css
 self .item.selected {
   background-color: transparent;
+}
+
+self .item.item-odd {
+  background-color: #e4e4e7;
+}
+
+self .item.item-even {
+  background-color: #33bae7;
 }
 ```
